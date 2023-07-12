@@ -16,28 +16,14 @@
         
         
         
-        <script >
-        function myFunction () {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
-        if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-        } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-        }
-        }
-        </script>
+            <script src="main.js"></script>
+
     </head>
     <body>
         <header class="main_header">
             <div class="d-flex justify-content-center align-items-center flex-column py-5">
                 <h1 class="text-uppercase main_heading">WhaToLearn</h1>
-                <p class="main_heading__para">Welcome to my <span class="text-capitalize bg-dark text-white py-2 px-3"> blog</span> </p>
+                <p class="main_heading__para">Welcome to  <span class="text-capitalize bg-dark text-white py-2 px-3"> Intern Choice blog</span> </p>
             </div>
             <!-- //the main image
             <div class="main_header__div d-flex align-items-start
@@ -74,16 +60,21 @@
                                         <h1 class="text-uppercase">All Shortcut keys in windows  of all version </h1>
                                         <p class="blog_title"> <span class="font-weight-bold"> <!-- Title description, </span> Aug 12, 2020 </p> -->
                                     </div>
-                                    <figure class="right_side_img mb-5">
+                                 <figure class="right_side_img mb-5">
                                         <img src="https://images.pexels.com/photos/3815750/pexels-photo-3815750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid shadow">
                                     </figure>
-                                    <p>
+                                    <p style="color: black;">
                                         <br><kbd>ctrl</kbd> + <kbd>A</kbd>&nbsp = to select all
                                         <br><kbd>ctrl</kbd> + <kbd>B</kbd>&nbsp = bold in word,excel powerpoint
                                         <br><kbd>ctrl</kbd> + <kbd>C</kbd>&nbsp = Copy selected text,image and etc
-                                        <br><kbd>ctrl</kbd> + <kbd>E</kbd>&nbsp = justify in word,excel,powerpoint.
+                                        <br><kbd>ctrl</kbd> + <kbd>E</kbd>&nbsp = Alignment in word,excel,powerpoint. 
+                                        <br><kbd>ctrl</kbd> + <kbd>F</kbd>&nbsp = Find option.
+                                        <br><kbd>ctrl</kbd> + <kbd>G</kbd>&nbsp = find and replace Option.  
+                                        <br><kbd>ctrl</kbd> + <kbd>H</kbd>&nbsp = History in Chrome or web_browser 
                                         <br><kbd>ctrl</kbd> + <kbd>I</kbd>&nbsp = italic the word
+                                        <span id="dots">...</span><span id="more">
                                         <br><kbd>ctrl</kbd> + <kbd>J</kbd>&nbsp = justify the word in office
+                                        <br><kbd>ctrl</kbd> + <kbd>K</kbd>&nbsp = Insert link 
                                         <br><kbd>ctrl</kbd> + <kbd>M</kbd>&nbsp = to add slide in powerpoint.
                                         <br><kbd>ctrl</kbd> + <kbd>N</kbd>&nbsp = new page in office
                                         <br><kbd>ctrl</kbd> + <kbd>O</kbd>&nbsp = to open file in office
@@ -96,6 +87,8 @@
                                         <br><kbd>ctrl</kbd> + <kbd>Y</kbd>&nbsp = redo option
                                         <br><kbd>ctrl</kbd> + <kbd>Z</kbd>&nbsp = to undo option
                                         <div class="d-flex justify-content-between left_div_btns"> </div>
+
+                                        <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
                                         
                                     </div>
                                 </div>
@@ -105,8 +98,56 @@
                 </div>
             </div>
             
-            <footer>
-                <p class="text-center py-5 bg-light">design with love By @Er. A.R Chourashiya</p>
-            </footer>
+            <!--
+               <div class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>about us</h3>
+            <p>We Develop Personalized Software At Our Company, We Turn The Digital Dreams Of Our Clients Into A Reality. We Work Closely With Our Users Throughout Development To Ensure That We Are Still Aligned With The End-Goal. We Are Committed To Producing Exceptional Software For Each Of Our Clients.</p>
+          </div>
+          <div class="box">
+            <h3>quick links</h3>
+            <a href="https://www.internchoice.com/" target="_blank">home</a>
+           <a href="https://www.internchoice.com/" target="_blank">about</a>
+            <a href="https://www.internchoice.com/" target="_blank">services</a>
+            <a href="https://www.internchoice.com/" target="_blank">Internships</a>
+            <a href="https://www.internchoice.com/" target="_blank">Testimonials</a>
+            <a href="https://www.internchoice.com/" target="_blank">contact</a>
+          </div>
+          <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/intern_choice"><i class="fab fa-facebook"></i>  Facebook</a>
+            <a href="https://www.instagram.com/intern_choice/"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/company/internchoice/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="hhttps://www.linkedin.com/company/internchoice/"><i class="fab fa-twitter"></i> Twitter</a>
+          </div>
+          <div class="box">
+            <h3>contact info</h3>
+            <div class="info">
+              <i class="fas fa-phone"></i>
+              <p> <a href="tel:+91 9156646301">9156646301  </a> </p>
+            </div>
+            <div class="info">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:service.internchoice@gmail.com"> contact@internchoice.in</a></p> <br>
+            <br> </div>
+            <div class="info">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:service.internchoice@gmail.com">service.internchoice@gmail.com</a> </p>
+            </div>
+            <div class="info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p> Main Road, Nashik Maharashtra, India - 422001 </p>
+            </div>
+          </div>
+          <h1 class="credit"> &copy; Copyright INTERN CHOICE. All Rights Reserved
+          Designed by Team  <a href="https://cocky-kare-6eae99.netlify.app/" target="_blank">Whattolearn</a> </h1>
+
+          
+        </div>
+      </div>
+    </div>
+               --> 
+            <p class="text-center py-5 bg-light">design with love By @Er. A.R Chourashiya</p>
         </body>
     </html>
